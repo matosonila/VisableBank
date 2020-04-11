@@ -5,9 +5,11 @@ Basic banking operations
 ruby version 2.6.3 required,
 rails version 6,
 ## Setup
-bundle install
-rails db:migrate
+$ git clone https://github.com/matosonila/VisableBank.git
+$ cd VisableBank
+$ bundle install
+$ rails db:migrate
 ## Populate database
-rails db:seed
+$ rails db:seed
 ## Start server
-rails s
+$ rails s
