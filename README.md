@@ -8,5 +8,5 @@ bundle install
 rails db:migrate
 # Populate database
 rails db:seed
-#start server
+# Start server
 rails s
