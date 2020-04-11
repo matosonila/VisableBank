@@ -1,0 +1,16 @@
+Rails.application.routes.draw do
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # resources :bank_accounts
+  #
+  #   resources :clients do
+  #     resources :bank_accounts, controller: "clients/bank_accounts", except: [:index, :show, :destroy]
+  #   end
+
+    namespace :api do
+      namespace :v1 do
+        post "bank_accounts/new_transaction", to: "bank_accounts#new_transaction"
+        get "bank_accounts/show", to: "bank_accounts#show"
+
+      end
+    end
+  end
